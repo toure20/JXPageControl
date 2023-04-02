@@ -151,13 +151,14 @@ import UIKit
             updateProgress(CGFloat(currentIndex)) }
     }
     
+    public var contentView: UIView = UIView()
+    
     /// Refresh the data and UI again
     public func reload() {
         reloadData()
     }
     
     // MARK: - -------------------------- Internal property list --------------------------
-    let contentView: UIView = UIView()
     
     var maxIndicatorSize: CGSize = CGSize(width: 2, height: 2)
     
